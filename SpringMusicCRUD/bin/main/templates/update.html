@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>更新フォーム</title>
+</head>
+<body>
+	<h1>更新入力</h1>
+	<form th:action="@{/update}" method="post">
+			<input type="hidden" name="song_id" th:value="${Form.song_id}">
+		曲名：<input type="text" name="song_name" th:value="${Form.song_name}"><br>
+		歌手名：<input type="text" name="singer" th:value="${Form.singer}">
+		<p>
+			<input type="submit" value="更新">
+		</p>
+	</form>
+	<button onclick="history.back()">戻る</button>
+</body>
+</html>

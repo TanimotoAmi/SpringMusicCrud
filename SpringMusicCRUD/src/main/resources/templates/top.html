@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>top</title>
+</head>
+<body>
+	<h1>楽曲一覧システム</h1>
+	<form th:action="@{/menu}" method="post">
+		<input type="submit" value="一覧" name="select">
+		<input type="submit" value="登録" name="insert">
+		<input type="submit" value="更新" name="update">
+		<input type="submit" value="削除" name="delete">
+	</form>
+</body>
+</html>

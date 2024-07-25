@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>登録フォーム</title>
+</head>
+<body>
+	<h1>楽曲一覧システム（登録）</h1>
+	<form th:action="@{/insert}" method="post">
+		曲名：<input type="text" name="song_name"><br>
+		歌手名：<input type="text" name="singer">
+		<p>
+			<input type="submit" value="登録確認">
+		</p>
+	</form>
+	<button onclick="history.back()">戻る</button>
+</body>
+</html>
